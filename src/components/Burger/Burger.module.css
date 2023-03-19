@@ -1,0 +1,29 @@
+.burger {
+    position: absolute;
+    width: 80%;
+    min-height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: 1s;
+    z-index: 2;
+}
+
+.close {
+    display: none;
+}
+
+.burger__list {
+    margin: 20px;
+}
+
+.list__item {
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.list__item:last-child {
+    margin-bottom: 0px;
+}
+
+.list__item a {
+    color: #fff
+}

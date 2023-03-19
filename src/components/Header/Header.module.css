@@ -1,0 +1,101 @@
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.header__logo {
+    display: block;
+    width: 326px;
+    height: 67px;
+    transform: rotate(90deg);
+}
+
+.logo__link {
+    display: block;
+    width: 330px;
+    height: 200px;
+    background: url('../../image/flower.jpg') center center/143px 242px no-repeat;
+}
+
+.header__menu {
+    margin: auto 0;
+}
+
+.menu__icon {
+    display: none;
+}
+
+@media (max-width: 767px) {
+
+    /* Закрытый бургер */
+    .menu__icon_close {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 18px;
+        cursor: pointer;
+    }
+
+    .menu__icon_close span,
+    .menu__icon_close::before,
+    .menu__icon_close::after {
+        left: 0;
+        position: absolute;
+        height: 10%;
+        width: 100%;
+        transition: all 0.3s ease 0s;
+        background-color: #000;
+    }
+
+    .menu__icon_close::before,
+    .menu__icon_close::after {
+        content: "";
+    }
+
+    .menu__icon_close::before {
+        top: 0;
+    }
+
+    .menu__icon_close::after {
+        bottom: 0;
+    }
+
+    .menu__icon_close span {
+        top: 45%;
+    }
+
+    /* Открытый бургер */
+    .menu__icon_open {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 18px;
+        cursor: pointer;
+    }
+
+    .menu__icon_open::before,
+    .menu__icon_open::after {
+        left: 0;
+        position: absolute;
+        height: 10%;
+        width: 100%;
+        transition: all 0.3s ease 0s;
+        background-color: #000;
+    }
+
+    .menu__icon_open::before,
+    .menu__icon_open::after {
+        content: "";
+    }
+
+    .menu__icon_open::before {
+        top: 48%;
+        rotate: 45deg;
+    }
+
+    .menu__icon_open::after {
+        top: 48%;
+        rotate: -45deg;
+    }
+}
