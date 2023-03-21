@@ -4,13 +4,16 @@ import s from "./Burger.module.css"
 
 type BurgerPropsType = {
     burgerMode: boolean
+    scroll: boolean
     setBurgerMode: (value: boolean) => void
+    setScroll: (value: boolean) => void
 }
 
 function Burger(props: BurgerPropsType) {
 
     const onClickHandler = () => {
         props.setBurgerMode(!props.burgerMode)
+        props.setScroll(!props.scroll)
     }
 
     return (

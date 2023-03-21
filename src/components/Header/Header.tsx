@@ -4,7 +4,9 @@ import s from "./Header.module.css"
 
 type HeaderProps = {
     burgerMode: boolean
+    scroll: boolean
     setBurgerMode: (value: boolean) => void
+    setScroll: (value: boolean) => void
 }
 
 function Header(props: HeaderProps) {
@@ -14,6 +16,17 @@ function Header(props: HeaderProps) {
                 <div className={s.header__logo}>
                     <NavLink to='/main' className={s.logo__link}></NavLink>
                 </div>
+                <nav className={s.header__nav}>
+                    <div className={s.nav__item}>
+                        <NavLink to='/about'>О нас</NavLink>
+                    </div>
+                    <div className={s.nav__item}>
+                        <NavLink to='/contacts'>Контакты</NavLink>
+                    </div>
+                    <div className={s.nav__item}>
+                        <NavLink to='/special'>Акции</NavLink>
+                    </div>
+                </nav>
                 <div className={s.header__menu}>
                     <div
                         className={!props.burgerMode
@@ -22,6 +35,7 @@ function Header(props: HeaderProps) {
                         }
                         onClick={() => {
                             props.setBurgerMode(!props.burgerMode)
+                            props.setScroll(!props.scroll)
                         }}
                     >
                         <span></span>

@@ -34,14 +34,14 @@ function Main() {
                     {
                         button &&
                         <>
-                            <div className={s.blur_off} onClick={onClickHandler}>x</div>
+                            <div className={s.blur_button} onClick={onClickHandler}>x</div>
                             <div className={s.blur_text}>
                                 <h2 className={s.text_title}>
-                                    Вас приветствует место красоты "Money Cure"
+                                    Вас приветствует место красоты <br/>"Money Cure"
                                 </h2>
                                 <p className={s.text_p}>
                                     У нас вы можете подстричься, сделать маникюр,
-                                    а также приятно провести время с нашими специалистами.
+                                    а также <br/> приятно провести время с нашими специалистами.
                                 </p>
                                 <div className={s.text_to_services}>
                                     <p>Ниже представлены разновидности услуг</p>
@@ -49,13 +49,11 @@ function Main() {
                                 </div>
                             </div>
                         </>
-                    }
+                    }                    
                 </div>
-                <div className={s.button}>
-                    {!button && <button className={s.btn} onClick={onClickHandler}>
-                        Узнать больше
-                    </button>}
-                </div>
+                {!button && <div className={s.button} onClick={onClickHandler}>
+                    Узнать больше
+                </div>}             
             </section>
             <section className={s.services}>
                 <div className={s.service__slider}>

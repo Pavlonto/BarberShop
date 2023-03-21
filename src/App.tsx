@@ -12,12 +12,13 @@ import Contacts from './components/Header/Burger/Contacts/Contacts';
 function App() {
 
   const [burgerMode, setBurgerMode] = useState(false)
+  const [scroll, setScroll] = useState(true)
 
   return (
     <div className="App">
-      <div className="wrapper">
-        <Burger burgerMode={burgerMode} setBurgerMode={setBurgerMode} />
-        <Header burgerMode={burgerMode} setBurgerMode={setBurgerMode}/>
+      <div className={"wrapper"} style={scroll ? {} : {height: "100vh", overflow: "hidden"}}>
+        <Burger burgerMode={burgerMode} setBurgerMode={setBurgerMode} scroll={scroll} setScroll={setScroll} />
+        <Header burgerMode={burgerMode} setBurgerMode={setBurgerMode} scroll={scroll} setScroll={setScroll} />
         <Routes>
           <Route path={'/'} element={<Navigate to={'/main'}/>} />
           <Route path={'/BarberShop'} element={<Navigate to={'/main'}/>} />
