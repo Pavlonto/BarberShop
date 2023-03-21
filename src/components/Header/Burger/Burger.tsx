@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from 'react-router-dom';
 import s from "./Burger.module.css"
 
 type BurgerPropsType = {
@@ -19,13 +20,19 @@ function Burger(props: BurgerPropsType) {
                     className={s.list__item}
                     onClick={onClickHandler}
                 >
-                    <a href="#">О нас</a>
+                    <NavLink to="/about">О нас</NavLink>
                 </li>
                 <li
                     className={s.list__item}
                     onClick={onClickHandler}
                 >
-                    <a href="#">Контакты</a>
+                    <NavLink to="/contacts">Контакты</NavLink>
+                </li>
+                <li
+                    className={s.list__item}
+                    onClick={onClickHandler}
+                >
+                    <NavLink to={'/special'} style={{color: "red"}}>Акции</NavLink>
                 </li>
             </ul>
         </div>

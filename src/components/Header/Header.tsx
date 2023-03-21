@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from 'react-router-dom';
 import s from "./Header.module.css"
 
 type HeaderProps = {
@@ -11,7 +12,7 @@ function Header(props: HeaderProps) {
         <div className={s.header}>
             <div className={s.header__container}>
                 <div className={s.header__logo}>
-                    <a href="#" className={s.logo__link}></a>
+                    <NavLink to='/main' className={s.logo__link}></NavLink>
                 </div>
                 <div className={s.header__menu}>
                     <div

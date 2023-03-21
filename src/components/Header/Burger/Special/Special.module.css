@@ -1,0 +1,21 @@
+.special {
+    min-height: 400px;
+    margin-top: 30px;
+}
+
+.special__title {
+    font-size: 20px;
+    text-align: center;
+}
+
+.special__p {
+    margin-top: 50px;
+    margin-left: 5vh;
+    font-size: 15px;
+}
+
+.item__date {
+    margin-top: 5px;
+    margin-right: 20px;
+    float: right;
+}

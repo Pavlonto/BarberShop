@@ -1,0 +1,8 @@
+.contacts {
+    min-height: 400px;
+}
+
+.contacts__title {
+    font-size: 20px;
+    text-align: center;
+}
