@@ -11,29 +11,34 @@ function Price() {
                     <div className={s.item__block}>
                         <h3 className={s.block__title}>На короткие волосы:</h3>
                         <div className={s.items}>
-                            <div className={s.item}>Пикси</div>
-                            <div className={s.item}>Короткое каре</div>
-                            <div className={s.item}>Каре</div>
-                            <div className={s.item}>Лесенка</div>
+                            <div className={s.item}>Пикси: от <span>***</span> рублей</div>
+                            <div className={s.item}>Короткое каре: от <span>***</span> рублей</div>
+                            <div className={s.item}>Каре: от <span>***</span> рублей</div>
+                            <div className={s.item}>Лесенка: от <span>***</span> рублей</div>
                         </div>
                     </div>
                     <div className={s.item__block}>
                         <h3 className={s.block__title}>На длинные волосы:</h3>
                         <div className={s.items}>
-                            <div className={s.item}>Лисий хвост</div>
-                            <div className={s.item}>Длинная лесенка</div>
-                            <div className={s.item}>Рваная стрижка</div>
-                            <div className={s.item}>Голливуд</div>
+                            <div className={s.item}>Лисий хвост: от <span>***</span> рублей</div>
+                            <div className={s.item}>Длинная лесенка: от <span>***</span> рублей</div>
+                            <div className={s.item}>Рваная стрижка: от <span>***</span> рублей</div>
+                            <div className={s.item}>Голливуд: от <span>***</span> рублей</div>
                         </div>
                     </div>
                 </div>
                 <div className={s.price__item}>
                     <div className={s.item__title}>Маникюр</div>
-                    <div className={s.items}>
-                        <div className={s.item}>Европейский</div>
-                        <div className={s.item}>Аппаратный</div>
-                        <div className={s.item}>Обрезной</div>
-                        <div className={s.item}>Комбинированный</div>
+                    <div className={s.item__block}>
+                        <div className={s.items}>
+                            <div className={s.item}>Обрезной: от <span>500</span> рублей</div>
+                            <div className={s.item}>Аппаратный: от <span>700</span> рублей</div>
+                            <div className={s.item}>Комбинированный: от <span>***</span> рублей</div>
+                            <div className={s.item}>Наращиваение: от <span>***</span> рублей</div>
+                            <div className={s.item}>Укрепление: от <span>***</span> рублей</div>
+                            <div className={s.item}>Коррекция: от <span>***</span> рублей</div>
+                            <div className={s.item}>Дизайн: от <span>***</span> рублей</div>
+                        </div>
                     </div>
                 </div>
             </div>
