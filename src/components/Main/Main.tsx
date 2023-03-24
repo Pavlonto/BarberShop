@@ -37,11 +37,11 @@ function Main() {
                             <div className={s.blur_button} onClick={onClickHandler}>x</div>
                             <div className={s.blur_text}>
                                 <h2 className={s.text_title}>
-                                    Вас приветствует место красоты <br/>"Money Cure"
+                                    Вас приветствует место красоты<div>"Money Cure"</div>
                                 </h2>
                                 <p className={s.text_p}>
-                                    У нас вы можете подстричься, сделать маникюр,
-                                    а также <br/> приятно провести время с нашими специалистами.
+                                    У нас вы можете постричься, сделать маникюр,
+                                    а также приятно провести время с нашими специалистами.
                                 </p>
                                 <div className={s.text_to_services}>
                                     <p>Ниже представлены разновидности услуг</p>
@@ -72,12 +72,12 @@ function Main() {
                     <div className={s.slider_line} style={{ right: offset + "px" }}>
                         <div className={s.slider1}>
                             <p className={s.slider__p}>
-                                Профессиональная стрижка в любом стиле с использованием профилированных инструментов и веществ.
+                                Стрижка в любом стиле с использованием профессиональных инструментов и веществ.
                             </p>
                         </div>
                         <div className={s.slider2}>
                             <p className={s.slider__p}>
-                                Окраска волос высококачественной химией.
+                                Окраска волос высококачественными материалами.
                             </p>
                         </div>
                         <div className={s.slider3}>
@@ -87,7 +87,6 @@ function Main() {
                         </div>
                     </div>
                 </div>
-
             </section>
         </main>
     )

@@ -21,7 +21,7 @@
     display: flex;
     position: relative;
     flex-direction: column;
-    animation: changeWidth 5s ease;
+    animation: changeWidth 3s ease;
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
     border-right: 1px solid whitesmoke;
@@ -53,10 +53,9 @@
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    white-space: nowrap;
     color: #fff;
     padding: 20px;
-    animation: showDiv 20s forwards;
+    animation: showDiv 10s forwards;
 }
 
 @keyframes showDiv {
@@ -73,16 +72,12 @@
         height: 50px;
     }
     
-    60% {
-        height: 110px;
-    }
-    
-    70% {
-        height: 150px;
+    50% {
+        height: 120px;
     }
 
-    90% {
-        height: auto;
+    60% {
+        height: 160px;
     }
 }
 
@@ -92,9 +87,15 @@
     line-height: 25px;
 }
 
+.text_title div {
+    margin-top: 10px;
+    font-size: 30px;
+}
+
 .text_p {
     margin-top: 20px;
     line-height: 15px;
+    margin: 20px auto 0 auto;
 }
 
 .text_to_services {
@@ -129,41 +130,31 @@
 /* Slider */
 
 .service__slider {
-    display: block;
     position: relative;
-    width: 375px;
-    height: 450px;
     overflow: hidden;
+    width: 375px;
+    margin: 0 auto;
 }
 
 .slider_line {
     display: flex;
     position: relative;
-    width: 1125px;
     height: 450px;
+    width: 300%;
     transition: all ease 1s;
 }
 
-.buttons {
-    display: flex;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%);
-    z-index: 2;
-}
-
 .slider1 {
-    min-width: 375px;
+    width: 375px;
     background: url('./../../image/slider1.jpg') center/ 375px 450px no-repeat;
 }
 
-.slider2 {
-    min-width: 375px;
+.slider2 {    
+    width: 375px;
     background: url('./../../image/slider2.jpg') center/ 375px 450px no-repeat;
 }
 
-.slider3 {
+.slider3 {    
     width: 375px;
     background: url('./../../image/slider3.jpeg') center/ 375px 450px no-repeat;
 }
@@ -175,4 +166,13 @@
     width: 210px;
     margin: 20px 0 0 20px;
     line-height: 15px;
+}
+
+.buttons {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 2;
 }

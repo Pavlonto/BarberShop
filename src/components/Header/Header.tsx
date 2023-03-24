@@ -14,17 +14,18 @@ function Header(props: HeaderProps) {
         <div className={s.header}>
             <div className={s.header__container}>
                 <div className={s.header__logo}>
-                    <NavLink to='/main' className={s.logo__link}></NavLink>
+                    <NavLink to='/BarberShop/main' className={s.logo__link}></NavLink>
                 </div>
+                <div className={s.header__title}>Money Cure</div>
                 <nav className={s.header__nav}>
                     <div className={s.nav__item}>
-                        <NavLink to='/about'>О нас</NavLink>
+                        <NavLink to='/BarberShop/about'>О нас</NavLink>
                     </div>
                     <div className={s.nav__item}>
-                        <NavLink to='/contacts'>Контакты</NavLink>
+                        <NavLink to='/BarberShop/contacts'>Контакты</NavLink>
                     </div>
                     <div className={s.nav__item}>
-                        <NavLink to='/special'>Акции</NavLink>
+                        <NavLink to='/BarberShop/special'>Акции</NavLink>
                     </div>
                 </nav>
                 <div className={s.header__menu}>

@@ -16,16 +16,16 @@ function App() {
 
   return (
     <div className="App">
-      <div className={"wrapper"} style={scroll ? {} : {height: "100vh", overflow: "hidden"}}>
+      <div className={"wrapper"} style={scroll ? {} : {height: "100vh", overflow: "hidden", position: "fixed", left: "0", width: "100%"}}>
         <Burger burgerMode={burgerMode} setBurgerMode={setBurgerMode} scroll={scroll} setScroll={setScroll} />
         <Header burgerMode={burgerMode} setBurgerMode={setBurgerMode} scroll={scroll} setScroll={setScroll} />
         <Routes>
-          <Route path={'/'} element={<Navigate to={'/main'}/>} />
-          <Route path={'/BarberShop'} element={<Navigate to={'/main'}/>} />
-          <Route path={'/main'} element={<Main/>} />
-          <Route path={'/about'} element={<AboutUs/>} />
-          <Route path={'/special'} element={<Special/>} />
-          <Route path={'/contacts'} element={<Contacts/>} />
+          <Route path={'/'} element={<Navigate to={'/BarberShop/main'}/>} />
+          <Route path={'/BarberShop'} element={<Navigate to={'/BarberShop/main'}/>} />
+          <Route path={'/BarberShop/main'} element={<Main/>} />
+          <Route path={'/BarberShop/about'} element={<AboutUs/>} />
+          <Route path={'/BarberShop/special'} element={<Special/>} />
+          <Route path={'/BarberShop/contacts'} element={<Contacts/>} />
         </Routes>
         <Footer />
       </div>
