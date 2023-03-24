@@ -32,6 +32,12 @@ function Burger(props: BurgerPropsType) {
                     className={s.list__item}
                     onClick={onClickHandler}
                 >
+                    <NavLink to="/BarberShop/price">Прайс</NavLink>
+                </li>
+                <li
+                    className={s.list__item}
+                    onClick={onClickHandler}
+                >
                     <NavLink to="/BarberShop/contacts">Контакты</NavLink>
                 </li>
                 <li

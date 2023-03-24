@@ -1,0 +1,45 @@
+.price {
+    
+    margin-top: 20px;
+}
+
+.price__title {
+    font-size: 20px;
+    text-align: center;
+}
+
+.price__items {
+    font-family: 'Playfair Display', serif;    
+}
+
+.price__item {    
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin: 30px;
+    padding: 20px;
+}
+
+.price__item:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.item__title {
+    text-align: center;
+    font-size: 17px;
+}
+
+.item__block {}
+
+.block__title {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.items {
+    margin: 5px 0 0 10px;
+    font-size: 10px;
+}
+
+.item:not(:last-child) {
+    margin-bottom: 5px;
+}

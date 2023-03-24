@@ -8,6 +8,7 @@ import Main from './components/Main/Main';
 import Special from './components/Header/Burger/Special/Special';
 import AboutUs from './components/Header/Burger/AboutUs/AboutUs';
 import Contacts from './components/Header/Burger/Contacts/Contacts';
+import Price from './components/Header/Burger/Price/Price';
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
           <Route path={'/BarberShop'} element={<Navigate to={'/BarberShop/main'}/>} />
           <Route path={'/BarberShop/main'} element={<Main/>} />
           <Route path={'/BarberShop/about'} element={<AboutUs/>} />
+          <Route path={'/BarberShop/price'} element={<Price/>} />
           <Route path={'/BarberShop/special'} element={<Special/>} />
           <Route path={'/BarberShop/contacts'} element={<Contacts/>} />
         </Routes>

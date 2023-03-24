@@ -22,6 +22,9 @@ function Header(props: HeaderProps) {
                         <NavLink to='/BarberShop/about'>О нас</NavLink>
                     </div>
                     <div className={s.nav__item}>
+                        <NavLink to='/BarberShop/price'>Прайс</NavLink>
+                    </div>
+                    <div className={s.nav__item}>
                         <NavLink to='/BarberShop/contacts'>Контакты</NavLink>
                     </div>
                     <div className={s.nav__item}>
